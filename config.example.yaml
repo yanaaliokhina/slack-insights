@@ -1,0 +1,24 @@
+slack:
+  # Channels to pull messages from (use names, without the #)
+  channels:
+    - announcements
+    - engineering-leaders
+    - engineering-hiring
+
+  # Users/mentions to track for the "Highlights" section.
+  # Use your Slack user ID (e.g. U012AB3CD) and/or display name.
+  # Find your user ID: Slack profile → More → Copy member ID
+  mentions:
+    - U03L6EEEEGVDB      # replace with your Slack user ID
+    - "@engineering"    # replace with your display name
+
+  # Start date for the digest (YYYY-MM-DD).
+  start_date: "2026-05-01"
+
+output:
+  # Maximum number of categories Claude will create (merges sparse ones)
+  max_categories: 10
+
+  # Google Drive folder where digest files are created.
+  # Find it in the folder URL: drive.google.com/drive/folders/<folder_id>
+  google_drive_folder_id: ""   # replace with your folder ID

@@ -117,6 +117,6 @@ To change the digest format or categorization rules, edit `format_template.md`.
 | Google Drive MCP tools not available | Connect Google Drive MCP and restart Claude Code |
 | No messages / empty categories | Check date range and that your Slack account can read the channels |
 | Agent exceeds max iterations | Reduce the number of channels or narrow the date range |
-| Wrong digest format | Edit `format_template.md` |
+| Wrong categorization or missing sections | Edit `format_template.md` (categorization rules and JSON schema) |
+| Wrong Google Doc formatting | Edit `.claude/agents/writer.md` (controls HTML rendering) |
 | Writer fails to create file | Verify `mcp__claude_ai_Google_Drive__create_file` is listed in `.claude/agents/writer.md` tools |
-# slack-insights
